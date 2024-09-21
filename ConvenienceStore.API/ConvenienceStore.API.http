@@ -1,0 +1,41 @@
+@ConvenienceStore.API_HostAddress = https://localhost:8081
+
+GET {{ConvenienceStore.API_HostAddress}}/
+Accept: application/json
+
+###
+
+GET {{ConvenienceStore.API_HostAddress}}/1
+Accept: application/json
+
+###
+
+POST {{ConvenienceStore.API_HostAddress}}/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "upc": "string",
+  "description": "string",
+  "price": 0,
+  "quantity": 0
+}
+
+###
+
+PUT {{ConvenienceStore.API_HostAddress}}/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 0,
+  "upc": "string",
+  "description": "string",
+  "price": 0,
+  "quantity": 0
+}
+
+###
+
+DELETE {{ConvenienceStore.API_HostAddress}}/1
+Accept: application/json
